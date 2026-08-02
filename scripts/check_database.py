@@ -1,0 +1,11 @@
+# checking the three tables where loaded succesfully in database
+
+import sqlite3
+
+conn = sqlite3.connect("bluestock_mf.db")
+cursor = conn.cursor()
+
+cursor.execute("SELECT name FROM sqlite_master WHERE type='table';")
+print(cursor.fetchall())
+
+conn.close()
