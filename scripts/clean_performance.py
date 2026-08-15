@@ -1,8 +1,8 @@
+"""Clean and preprocess mutual fund performance data."""
+
 import numpy as np
 import pandas as pd
 df=pd.read_csv("data/raw/07_scheme_performance.csv")
-print(df.columns)
-print(df.head())
 
 df["return_1yr_pct"]=pd.to_numeric(df["return_1yr_pct"],errors="coerce") # validate return values are numbers.convert return columns to numbers 
 df["return_3yr_pct"]=pd.to_numeric(df["return_3yr_pct"],errors="coerce")  

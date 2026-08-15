@@ -1,3 +1,5 @@
+"""Run SQL queries against the Bluestock mutual fund database."""
+
 import sqlite3
 import pandas as pd
 

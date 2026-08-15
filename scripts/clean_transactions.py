@@ -1,7 +1,7 @@
+"""Clean and preprocess investor transaction data."""
+
 import pandas as pd
 df=pd.read_csv("data/raw/08_investor_transactions.csv")
-print(df.columns)
-print(df.head())
 
 df["transaction_date"].str.strip().str.title() #strip=remove extra spaces,title= capitalize  the first letter of each word.
 

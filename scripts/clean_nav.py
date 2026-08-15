@@ -1,9 +1,8 @@
-import pandas as pd
+"""Clean and preprocess mutual fund NAV data."""
 
+import pandas as pd
 df=pd.read_csv("data/raw/02_nav_history.csv")
-print(df.columns)
-print(df.dtypes)
-print(df.head())
+
 
 df["date"]=pd.to_datetime(df["date"])   #converting date into datetime
 

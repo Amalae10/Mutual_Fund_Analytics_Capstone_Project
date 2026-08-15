@@ -1,3 +1,5 @@
+"""Fetch mutual fund NAV data from the MFAPI service."""
+
 import requests
 import pandas as pd
 
