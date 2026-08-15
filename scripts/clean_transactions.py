@@ -11,4 +11,4 @@ df["transaction_date"]=pd.to_datetime(df["transaction_date"]) #converting date i
 
 df=df.drop_duplicates()  #remove duplicates rows
 
-df.to_csv("data/processed/clean_transations.csv",index=False)  #save the cleaned file.
+df.to_csv("data/processed/clean_transactions.csv",index=False)  #save the cleaned file.

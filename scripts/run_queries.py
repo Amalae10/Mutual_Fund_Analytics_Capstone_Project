@@ -13,6 +13,6 @@ LIMIT 10;
 
 result = pd.read_sql_query(query, conn)
 
-print(result)
+print("Queries executed successfully.")
 
 conn.close()
